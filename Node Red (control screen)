@@ -1,0 +1,872 @@
+[
+    {
+        "id": "deb2d301c25a19bb",
+        "type": "server-state-changed",
+        "z": "21e501e253a3c946",
+        "name": "Stairway Motion",
+        "server": "2f0cf948.1a02d6",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "binary_sensor.stairway_motion_occupancy",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "8025ea458c6f725b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e584add3118b725b",
+        "type": "server-state-changed",
+        "z": "21e501e253a3c946",
+        "name": "Entryway mmWave",
+        "server": "2f0cf948.1a02d6",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "binary_sensor.entryway_mmwave_presence",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "8025ea458c6f725b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f9717303f172bfbd",
+        "type": "server-state-changed",
+        "z": "21e501e253a3c946",
+        "name": "Stairway mmWave",
+        "server": "2f0cf948.1a02d6",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "binary_sensor.stairway_mmwave_presence",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "8025ea458c6f725b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6b03a42b7764ca8a",
+        "type": "server-state-changed",
+        "z": "21e501e253a3c946",
+        "name": "Media Motion",
+        "server": "2f0cf948.1a02d6",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "binary_sensor.media_room_motion_occupancy",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "8025ea458c6f725b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5a010c9e041d32cb",
+        "type": "server-state-changed",
+        "z": "21e501e253a3c946",
+        "name": "Driveway",
+        "server": "2f0cf948.1a02d6",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "binary_sensor.driveway_motion",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 80,
+        "y": 160,
+        "wires": [
+            [
+                "8025ea458c6f725b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5dfb109282194fb7",
+        "type": "server-state-changed",
+        "z": "21e501e253a3c946",
+        "name": "Driveway",
+        "server": "2f0cf948.1a02d6",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "binary_sensor.driveway_motion",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 80,
+        "y": 340,
+        "wires": [
+            [
+                "8025ea458c6f725b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9ef84356d7ec1e0e",
+        "type": "server-state-changed",
+        "z": "21e501e253a3c946",
+        "name": "Lounge",
+        "server": "2f0cf948.1a02d6",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "binary_sensor.zone_2_occupancy",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 70,
+        "y": 460,
+        "wires": [
+            [
+                "8025ea458c6f725b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8025ea458c6f725b",
+        "type": "api-call-service",
+        "z": "21e501e253a3c946",
+        "name": "Wake",
+        "server": "2f0cf948.1a02d6",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "android_wake",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "ba50a1fa7b4e2a4a",
+                "a353662d70800e5b",
+                "d2cc4b8f2b65945f"
+            ]
+        ]
+    },
+    {
+        "id": "d2cc4b8f2b65945f",
+        "type": "api-call-service",
+        "z": "21e501e253a3c946",
+        "name": "Bright",
+        "server": "2f0cf948.1a02d6",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "android_full_brightness",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 570,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c472947a59cc84e2",
+        "type": "api-call-service",
+        "z": "21e501e253a3c946",
+        "name": "Low",
+        "server": "2f0cf948.1a02d6",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "android_low_brightness",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 630,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f15f0db7283711f4",
+        "type": "api-call-service",
+        "z": "21e501e253a3c946",
+        "name": "Sleep",
+        "server": "2f0cf948.1a02d6",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "script",
+        "service": "android_sleep",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 810,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ba50a1fa7b4e2a4a",
+        "type": "trigger",
+        "z": "21e501e253a3c946",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "60",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 590,
+        "y": 260,
+        "wires": [
+            [],
+            [
+                "737083de80867e72"
+            ]
+        ]
+    },
+    {
+        "id": "39acfe18a52b445d",
+        "type": "trigger",
+        "z": "21e501e253a3c946",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "10",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 650,
+        "y": 480,
+        "wires": [
+            [],
+            [
+                "f15f0db7283711f4"
+            ]
+        ]
+    },
+    {
+        "id": "a353662d70800e5b",
+        "type": "change",
+        "z": "21e501e253a3c946",
+        "name": "cancel",
+        "rules": [
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "e04ae90892fa3adf"
+            ]
+        ]
+    },
+    {
+        "id": "dcfb224fd6e72993",
+        "type": "server-state-changed",
+        "z": "21e501e253a3c946",
+        "name": "Driveway",
+        "server": "2f0cf948.1a02d6",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "binary_sensor.driveway_motion_2",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 80,
+        "y": 400,
+        "wires": [
+            [
+                "8025ea458c6f725b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "642e0ee95a97b264",
+        "type": "comment",
+        "z": "21e501e253a3c946",
+        "name": "Panel Sleep Control",
+        "info": "",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "df7141d1bd457e77",
+        "type": "api-current-state",
+        "z": "21e501e253a3c946",
+        "name": "Entryway",
+        "server": "2f0cf948.1a02d6",
+        "version": 3,
+        "outputs": 2,
+        "halt_if": "on",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "entity_id": "binary_sensor.entryway_mmwave_presence",
+        "state_type": "str",
+        "blockInputOverrides": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entity"
+            }
+        ],
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "override_topic": false,
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "148ab21fe1ad13d5"
+            ],
+            [
+                "39acfe18a52b445d",
+                "c472947a59cc84e2"
+            ]
+        ]
+    },
+    {
+        "id": "8eeed36dc504f5f6",
+        "type": "link in",
+        "z": "21e501e253a3c946",
+        "name": "link in 27",
+        "links": [
+            "148ab21fe1ad13d5"
+        ],
+        "x": 535,
+        "y": 200,
+        "wires": [
+            [
+                "ba50a1fa7b4e2a4a"
+            ]
+        ]
+    },
+    {
+        "id": "07a67787d475cac8",
+        "type": "link in",
+        "z": "21e501e253a3c946",
+        "name": "link in 28",
+        "links": [
+            "e04ae90892fa3adf"
+        ],
+        "x": 595,
+        "y": 420,
+        "wires": [
+            [
+                "39acfe18a52b445d"
+            ]
+        ]
+    },
+    {
+        "id": "148ab21fe1ad13d5",
+        "type": "link out",
+        "z": "21e501e253a3c946",
+        "name": "link out 51",
+        "mode": "link",
+        "links": [
+            "8eeed36dc504f5f6",
+            "46ee5df510957689"
+        ],
+        "x": 595,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e04ae90892fa3adf",
+        "type": "link out",
+        "z": "21e501e253a3c946",
+        "name": "link out 52",
+        "mode": "link",
+        "links": [
+            "07a67787d475cac8"
+        ],
+        "x": 655,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "737083de80867e72",
+        "type": "link out",
+        "z": "21e501e253a3c946",
+        "name": "link out 53",
+        "mode": "link",
+        "links": [
+            "220ec8aca9433bbd"
+        ],
+        "x": 705,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "220ec8aca9433bbd",
+        "type": "link in",
+        "z": "21e501e253a3c946",
+        "name": "link in 29",
+        "links": [
+            "737083de80867e72"
+        ],
+        "x": 325,
+        "y": 420,
+        "wires": [
+            [
+                "df7141d1bd457e77"
+            ]
+        ]
+    },
+    {
+        "id": "46ee5df510957689",
+        "type": "link in",
+        "z": "21e501e253a3c946",
+        "name": "link in 30",
+        "links": [
+            "148ab21fe1ad13d5"
+        ],
+        "x": 645,
+        "y": 200,
+        "wires": [
+            [
+                "a353662d70800e5b"
+            ]
+        ]
+    },
+    {
+        "id": "2f0cf948.1a02d6",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 2,
+        "addon": false,
+        "rejectUnauthorizedCerts": false,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": true,
+        "heartbeatInterval": "30"
+    }
+]

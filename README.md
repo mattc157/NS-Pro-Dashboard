@@ -18,3 +18,6 @@ https://github.com/thomasloven/lovelace-layout-card
 https://github.com/piitaya/lovelace-mushroom-themes
 https://github.com/thomasloven/hass-browser_mod
 
+Other Software:
+Nodered
+Android TV intergration (to send ADB commands to wake and sleep the screen)

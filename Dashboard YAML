@@ -1,0 +1,538 @@
+views:
+  - theme: Mushroom Shadow
+    title: Home
+    type: panel
+    badges: []
+    cards:
+      - type: custom:swipe-card
+        parameters:
+          spaceBetween: 10
+          hide: false
+          draggable: true
+          snapOnRelease: true
+          speed: 200
+          css_mode: true
+          keyboard:
+            enabled: true
+            onlyInViewport: true
+        start_card: 3
+        cards:
+          - type: picture-elements
+            image: /local/nspro/black.jpg
+            style: |
+              ha-card {
+                  width: 480px;
+                  height: 480px;
+              }
+            elements:
+              - backdrop: false
+                type: custom:mushroom-fan-card
+                entity: fan.ensuite_fan
+                icon_animation: true
+                name: Ensuite Fan
+                style: |
+                  ha-card {
+                    left: 240px;
+                    bottom: 365px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 25px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 440px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-fan-card
+                entity: fan.guest_bathroom_fan
+                icon_animation: true
+                name: Bathroom Fan
+                style: |
+                  ha-card {
+                    left: 240px;
+                    bottom: 220px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 440px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-fan-card
+                entity: fan.downstairs_toilet_fan
+                icon_animation: true
+                name: Downstairs Toilet
+                style: |
+                  ha-card {
+                    left: 240px;
+                    bottom: 75px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 440px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-title-card
+                title: Fans
+                style:
+                  transform: none
+                  top: '-15px'
+                  left: 2px
+          - type: picture-elements
+            image: /local/nspro/black.jpg
+            style: |
+              ha-card {
+                  width: 480px;
+                  height: 480px;
+              }
+            elements:
+              - backdrop: false
+                type: custom:thermostat-card
+                entity: climate.lounge_ac
+                title: ' '
+                no_card: true
+                step: 1
+                chevron_size: 100
+                pending: 3
+                style: |
+                  ha-card {
+                    left: 240px;
+                    bottom: 235px;
+                    width: 510px
+                    }
+              - backdrop: false
+                type: custom:mushroom-title-card
+                title: Lounge
+                style:
+                  transform: none
+                  top: '-15px'
+                  left: 2px
+          - type: picture-elements
+            image: /local/nspro/leaf2.jpg
+            style: |
+              ha-card {
+                  width: 480px;
+                  height: 480px;
+              }
+            elements:
+              - backdrop: false
+                type: custom:layout-card
+                layout_type: grid
+                layout_options:
+                  grid-template-columns: 1fr
+                cards:
+                  - type: weather-forecast
+                    show_current: true
+                    show_forecast: false
+                    entity: weather.forecast_apollo_home
+                    secondary_info_attribute: humidity
+                    style: |
+                      ha-card {
+                          width: 480px;
+                          height: 180px;
+                          left: 240px;
+                          bottom: 415px;
+                          background: none;
+                          box-shadow: none;
+                      }
+              - entity: sensor.time12
+                hold_action:
+                  action: none
+                style:
+                  transform: none
+                  color: rgba(255, 255, 255, .9)
+                  font-size: 120px
+                  font-weight: 380
+                  top: 165px
+                  left: 15px
+                  letter-spacing: '-4px'
+                tap_action:
+                  action: none
+                type: state-label
+              - entity: sensor.date_string
+                hold_action:
+                  action: none
+                style:
+                  transform: none
+                  color: rgba(255, 255, 255, .9)
+                  font-size: 40px
+                  font-weight: 300
+                  top: 255px
+                  left: 20px
+                tap_action:
+                  action: none
+                type: state-label
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.stairway_lights
+                icon: mdi:stairs
+                name: Stairs
+                show_brightness_control: false
+                tap_action:
+                  action: call-service
+                  service: script.stairway_dimmer
+                  data: {}
+                  target: {}
+                style: |
+                  ha-card {
+                    left: 121px;
+                    bottom: 75px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.media_room_dimmer
+                name: Media
+                icon: mdi:monitor
+                show_brightness_control: false
+                tap_action:
+                  action: call-service
+                  service: script.media_dimmer
+                  data: {}
+                  target: {}
+                style: |
+                  ha-card {
+                    left: 359px;
+                    bottom: 75px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+
+                  }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+          - type: picture-elements
+            image: /local/nspro/leaf_right.jpg
+            style: |
+              ha-card {
+                  width: 480px;
+                  height: 480px;
+              }
+            elements:
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.lounge_dimmer
+                icon: mdi:sofa
+                name: Lounge
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 121px;
+                    bottom: 365px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 25px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.kitchen_lights
+                name: Kitchen
+                icon: mdi:silverware-fork-knife
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 359px;
+                    bottom: 365px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 25px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+
+                  }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.dining_room_table_lights
+                icon: mdi:table-furniture
+                name: Dining
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 121px;
+                    bottom: 220px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.washroom_lights
+                name: Laundry
+                icon: mdi:washing-machine
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 359px;
+                    bottom: 220px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 25px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+
+                  }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.downstairs_toilet_light
+                icon: mdi:toilet
+                name: Toilet
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 121px;
+                    bottom: 75px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.tool_room_light
+                name: Tool
+                icon: mdi:wrench
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 359px;
+                    bottom: 75px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+
+                  }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-title-card
+                title: Downstairs Lights
+                style:
+                  transform: none
+                  top: '-15px'
+                  left: 2px
+          - type: picture-elements
+            image: /local/nspro/black.jpg
+            style: |
+              ha-card {
+                  width: 480px;
+                  height: 480px;
+              }
+            elements:
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.bedroom_dimmer
+                icon: mdi:bed
+                name: Bedroom
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 121px;
+                    bottom: 365px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 22px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.computer_room_lights
+                name: Computer
+                icon: mdi:laptop
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 359px;
+                    bottom: 365px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 20px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+
+                  }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.guest_bedroom_dimmer
+                icon: mdi:account
+                name: Guest
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 121px;
+                    bottom: 220px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.guest_bathroom_lights
+                name: Bath
+                icon: mdi:bathtub
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 359px;
+                    bottom: 220px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 27px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+
+                  }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.upstairs_toilet_light
+                icon: mdi:toilet
+                name: Toilet
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 121px;
+                    bottom: 75px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 29px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-light-card
+                entity: light.hallway_lights
+                name: Hallway
+                icon: mdi:door
+                show_brightness_control: false
+                style: |
+                  ha-card {
+                    left: 359px;
+                    bottom: 75px;
+                    --icon-size: 115px;
+                    --card-primary-font-size: 25px;
+                    --card-secondary-font-size: 25px;
+                    --card-background-color: rgba(26,26,26,.9);
+                    text-align: left
+
+                  }
+                  mushroom-card{
+                    width: 205px;
+                    height: 113px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-title-card
+                title: Upstairs Lights
+                style:
+                  transform: none
+                  top: '-15px'
+                  left: 2px
+          - type: picture-elements
+            image: /local/nspro/black.jpg
+            style: |
+              ha-card {
+                  width: 480px;
+                  height: 480px;
+              }
+            elements:
+              - backdrop: false
+                type: custom:mushroom-entity-card
+                entity: input_boolean.hold
+                icon_color: pink
+                tap_action:
+                  action: toggle
+                icon: mdi:hand-back-left
+                style: |
+                  ha-card {
+                    left: 275px;
+                    bottom: 190px;
+                    --icon-size: 405px;
+                    --card-primary-font-size: 0px;
+                    --card-secondary-font-size: 0px;
+                    --card-background-color: rgba(26,26,26,0);
+                    text-align: left
+                    }
+                  mushroom-card{
+                    width: 480px;
+                    height: 480px;  
+                  }
+              - backdrop: false
+                type: custom:mushroom-title-card
+                title: Hold Mode (Auto Lights Disabled)
+                style:
+                  transform: none
+                  top: '-15px'
+                  left: 40px
